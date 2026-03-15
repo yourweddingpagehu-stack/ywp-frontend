@@ -1,0 +1,438 @@
+<!doctype html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Wedding Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Work+Sans:wght@300;400;500;600&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init({
+            publicKey: "OUN47Y5YoTTlG5keI",
+        });
+    })();
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="container nav">
+            <div class="logo">your <span>wedding</span> page</div>
+        <nav class="nav-links" id="navLinks">
+          <a href="#bemutatkozas">Bemutatkozás</a>
+          <a href="#szolgaltatasok">Szolgáltatások</a>
+          <a href="#folyamat">Folyamat</a>
+          <a href="#arlista">Árlista</a>
+          <a href="#projektek">Inspiráció</a>
+          <a href="#kapcsolat">Kapcsolat</a>
+        </nav>
+            <button class="hamburger" id="hamburger" aria-label="Menü">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <section class="hero" id="bemutatkozas">
+        <div class="container hero-grid">
+            <div class="reveal">
+                <h1>Esküvői oldalak stílussal és történettel</h1>
+                <p>
+                    A Your Wedding Page egy olyan szolgáltatás, amely
+                    <strong>egyedi, személyre szabott esküvői weboldalak és online meghívók készítésére</strong>
+                    specializálódott. Célunk, hogy a párok számára egy modern, elegáns és könnyen használható felületet
+                    hozzunk létre,
+                    ahol a vendégek minden fontos információt megtalálhatnak az esküvővel kapcsolatban.
+                </p>
+
+                <p>
+                    A legtöbb esküvői weboldal szolgáltatással ellentétben mi
+                    <strong>nem sablonokkal dolgozunk</strong>.
+                    Minden weboldalt teljesen egyedileg, a megrendelő elképzelései alapján készítünk el.
+                    Legyen szó romantikus, minimalista, elegáns vagy kreatív stílusról,
+                    mi pontosan azt az esküvői weboldalt valósítjuk meg, amelyet a pár megálmodott.
+                </p>
+
+                <p>
+                    Az általunk készített <strong>esküvői weboldalak</strong> nemcsak modern
+                    <strong>online meghívóként</strong> működnek, hanem egy központi információs felületként is.
+                    A vendégek egy helyen megtalálhatják például a
+                    <strong>helyszínt, az időpontot, a programot, a visszajelzési lehetőséget (RSVP)</strong>,
+                    valamint további fontos részleteket az eseményről.
+                </p>
+
+                <p>
+                    A <strong>Your Wedding Page esküvői weboldalai</strong> segítenek abban,
+                    hogy az esküvő szervezése átláthatóbb legyen, a vendégek pedig egyszerűen és gyorsan
+                    hozzáférjenek minden szükséges információhoz.
+                </p>
+
+                <p>
+                    Ha <strong>egyedi esküvői weboldalt</strong> szeretnétek, amely valóban tükrözi a stílusotokat és
+                    történeteteket,
+                    a Your Wedding Page tökéletes választás lehet számotokra.
+                </p>
+                <div class="hero-actions">
+                    <a class="btn btn-primary" href="#kapcsolat">Kezdjük el</a>
+                    <a class="btn btn-outline" href="#projektek">Nézz munkákat</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="szolgaltatasok">
+        <div class="container">
+            <h2 class="section-title reveal">Szolgáltatások</h2>
+            <p class="section-subtitle reveal">
+                Személyre szabott esküvői weboldalakat és online meghívókat készítünk,
+                amelyek tökéletesen tükrözik a pár stílusát és elképzeléseit. Nálunk nincsenek sablonok –
+                minden weboldalt teljesen egyedileg tervezünk, hogy az esküvőtök már az első online pillanattól
+                különleges legyen.
+            </p>
+            <div class="services-grid">
+                <div class="card service-card reveal">
+                    <div class="badge">Alapcsomag</div>
+                    <div class="service-content">
+                        <h3>Arculat & dizájn</h3>
+                        <p>Személyre szabott megjelenés, teljesen a ti stílusotokra szabva.</p>
+                    </div>
+                    <button class="btn btn-outline service-btn" data-service="arculat" type="button">
+                        Katt a részletekért
+                    </button>
+                </div>
+                <div class="card service-card reveal">
+                    <div class="badge">Alapcsomag</div>
+                    <div class="service-content">
+                        <h3>Információs blokkok</h3>
+                        <p>Programok, helyszínek, térképek és praktikus infók egyetlen oldalon.</p>
+                    </div>
+                    <button class="btn btn-outline service-btn" data-service="info" type="button">
+                        Katt a részletekért
+                    </button>
+                </div>
+                <div class="card service-card reveal">
+                    <div class="badge">Alapcsomag</div>
+                    <div class="service-content">
+                        <h3>Visszajelzés kezelés</h3>
+                        <p>Egyszerű kapcsolatfelvétel és vendéglista-kezelés e-mailes értesítésekkel.</p>
+                    </div>
+                    <button class="btn btn-outline service-btn" data-service="visszajelzes" type="button">
+                        Katt a részletekért
+                    </button>
+                </div>
+                <div class="card service-card reveal">
+                    <div class="badge">Alapcsomag</div>
+                    <div class="service-content">
+                        <h3>Gyors frissítések</h3>
+                        <p>Rugalmas módosítások, ha változik a menetrend vagy a helyszín.</p>
+                    </div>
+                    <button class="btn btn-outline service-btn" data-service="frissites" type="button">
+                        Katt a részletekért
+                    </button>
+                </div>
+            </div>
+            <br>
+            <div class="services-grid">
+                <div class="card service-card reveal">
+                    <div class="badge">Bővítmény</div>
+                    <div class="service-content">
+                        <h3>Fotóalbum az esküvő ideje alatt</h3>
+                        <p>Hogy a vendégek fotói egyből egy közös albumba kerüljenek.</p>
+                    </div>
+                    <button class="btn btn-outline service-btn" data-service="fotoalbum" type="button">
+                        Katt a részletekért
+                    </button>
+                </div>
+                <div class="card service-card reveal">
+                    <div class="badge">Bővítmény</div>
+                    <div class="service-content">
+                        <h3>Telefonos alkalmazás</h3>
+                        <p>A weboldalatok telefonos alkalmazásként, a gyorsabb elérés érdekében.</p>
+                    </div>
+                    <button class="btn btn-outline service-btn" data-service="app" type="button">
+                        Katt a részletekért
+                    </button>
+                </div>
+                <div class="card service-card reveal">
+                    <div class="badge">Bővítmény</div>
+                    <div class="service-content">
+                        <h3>Nyelvi modul</h3>
+                        <p>A weboldalatok több nyelven is meg tud jelenni, a könnyebb megérthetőség érdekében.</p>
+                    </div>
+                    <button class="btn btn-outline service-btn" data-service="nyelv" type="button">
+                        Katt a részletekért
+                    </button>
+                </div>
+                <div class="card service-card reveal">
+                    <div class="badge">Bővítmény</div>
+                    <div class="service-content">
+                        <h3>Meghívó modul</h3>
+                        <p>A weboldalatok mellé kérhettek egy egyéni online meghívót is, amit elküldhettek meghívottaitoknak</p>
+                    </div>
+                    <button class="btn btn-outline service-btn" data-service="onlinemMeghivo" type="button">
+                        Katt a részletekért
+                    </button>
+                </div>
+                <div class="card service-card reveal">
+                    <div class="badge">Bővítmény</div>
+                    <div class="service-content">
+                        <h3>Fizikai meghívó tervezés</h3>
+                        <p>A weboldal mellett szívesen megtervezzük az egyéni meghívótokat is, amit digitális formában elküldünk nektek, hogy az esküvő arculata teljesen egységes legyen.</p>
+                    </div>
+                    <button class="btn btn-outline service-btn" data-service="fizikaiMeghivo" type="button">
+                        Katt a részletekért
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="folyamat">
+        <div class="container">
+            <h2 class="section-title reveal">Folyamat és együttműködés</h2>
+            <p class="section-subtitle reveal">
+                Az esküvői weboldal elkészítése egy átlátható, együttműködésre épülő folyamat. Minden lépésnél
+                közösen döntünk, hogy a végeredmény pontosan olyan legyen, amilyennek megálmodtátok.
+            </p>
+
+            <div class="process-grid">
+                <div class="process-step reveal">
+                    <div class="step-marker">01</div>
+                    <h3>Első egyeztetés</h3>
+                    <p>Kötetlen beszélgetés az elképzeléseitekről, hangulatról és igényekről.</p>
+                </div>
+                <div class="process-step reveal">
+                    <div class="step-marker">02</div>
+                    <h3>Tervezés</h3>
+                    <p>Igényspecifikáció, funkciók és arculat rögzítése, majd indul a fejlesztés.</p>
+                </div>
+                <div class="process-step reveal">
+                    <div class="step-marker">03</div>
+                    <h3>Első bemutatás</h3>
+                    <p>Megnézitek az első verziót, és visszajelzést adtok a finomhangoláshoz.</p>
+                </div>
+                <div class="process-step reveal">
+                    <div class="step-marker">04</div>
+                    <h3>Tesztelés</h3>
+                    <p>Éles próba, ellenőrzés, végső módosítások és tartalom finomítás.</p>
+                </div>
+                <div class="process-step reveal">
+                    <div class="step-marker">05</div>
+                    <h3>Átadás</h3>
+                    <p>Élesítés, végleges átadás, későbbi kisebb frissítésekkel.</p>
+                </div>
+            </div>
+
+            <div class="process-details">
+                <div class="card reveal">
+                    <h3>Kapcsolattartás</h3>
+                    <p>
+                        A folyamat során folyamatosan elérhetőek vagyunk e-mailben vagy közösségi média
+                        csatornákon, hogy minden kérdés gyorsan tisztázódjon.
+                    </p>
+                </div>
+                <div class="card reveal">
+                    <h3>Fizetés</h3>
+                    <p>
+                        A fejlesztés az előleg befizetése után indul. A teljes összeg
+                        <strong>50%-át előlegként</strong> kérjük, a fennmaradó rész az átadás után esedékes.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="arlista">
+        <div class="container">
+            <h2 class="section-title reveal">Árlista</h2>
+            <p class="section-subtitle reveal">
+                Az árazás egy <strong>alapcsomagból</strong> indul, amely tartalmazza a teljes weboldal elkészítését,
+                az egyedi dizájnt, a tárhelyet (hostolást), valamint az alap funkciókat, például az információs blokkokat
+                és a vendégek visszajelzésére szolgáló <strong>RSVP modult</strong>.
+            </p>
+
+            <p class="section-subtitle reveal">
+                Az alapcsomag ára <strong>50 000 Ft</strong>. Ezt követően a párok szabadon választhatnak
+                <strong>beépülő modulokat</strong>, amelyek <strong>plusz költségként</strong> adódnak hozzá az alapárhoz.
+            </p>
+            <div class="pricing-grid">
+                <div class="card reveal">
+                    <h3>Alap modul</h3>
+                    <p class="price">50 000 Ft</p>
+                    <p>Teljes weboldal + alap funkciók (design, információs blokkok, RSVP).</p>
+                </div>
+                <div class="card reveal">
+                    <h3>Fotóalbum az esküvő ideje alatt</h3>
+                    <p class="price">+ 10 000 Ft</p>
+                    <p>Közös album, ahová a vendégek fotói azonnal bekerülnek.</p>
+                </div>
+                <div class="card reveal">
+                    <h3>Telefonos alkalmazás</h3>
+                    <p class="price">+ 10 000 Ft</p>
+                    <p>Alkalmazás-szerű elérés a vendégeknek és a párnak.</p>
+                </div>
+                <div class="card reveal">
+                    <h3>Nyelvi modul</h3>
+                    <p class="price">+ 10 000 Ft</p>
+                    <p>Többnyelvű weboldal a nemzetközi vendégeknek.</p>
+                </div>
+                <div class="card reveal">
+                    <h3>Meghívó modul</h3>
+                    <p class="price">+ 20 000 Ft</p>
+                    <p>Egyedi online meghívó, amit könnyen megoszthattok.</p>
+                </div>
+                <div class="card reveal">
+                    <h3>Fizikai meghívó dizájnolás</h3>
+                    <p class="price">+ 10 000 Ft</p>
+                    <p>Nyomdai dizájn egységes arculattal, digitális átadással.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section projects-section" id="projektek">
+        <div class="container">
+            <h2 class="section-title reveal">Inspiráció és referencia</h2>
+            <div class="projects-panel reveal">
+                <div class="projects-text">
+                    <p>
+                        Szeretnéd megnézni, milyen egy igazán <strong>elegáns és személyre szabott esküvői weboldal</strong>? 
+                        <strong>Instagram oldalunkon</strong> folyamatosan megosztjuk az általunk készített egyedi esküvői weboldalakat, 
+                        valódi párok történeteit és a legszebb digitális esküvői meghívókat.
+                    </p>
+                    <p>
+                        Itt betekintést nyerhetsz abba, hogyan néz ki egy <strong>modern esküvői weboldal</strong> a 
+                        gyakorlatban: hogyan jelenik meg rajta a pár története, az esküvő részletei, a 
+                        programok, valamint az a <strong>különleges hangulat</strong>, amely a nagy napotokat igazán egyedivé teszi.
+                    </p>
+                    <p>
+                        Instagram oldalunk nemcsak <strong>referenciaként</strong> szolgál, 
+                        hanem <strong>inspirációt</strong> is ad azoknak a pároknak, akik egy stílusos, letisztult és 
+                        könnyen használható esküvői weboldalt szeretnének létrehozni vendégeik számára.
+                    </p>
+                    <p>
+                        <strong>Kövess minket Instagramon</strong>, és fedezd fel az eddigi munkáinkat, valamint azokat a kreatív megoldásokat, 
+                        amelyek segítenek abban, hogy az esküvőtök online jelenléte is ugyanolyan különleges legyen, 
+                        mint maga az esemény.
+                    </p>
+                </div>
+                <div class="projects-cta">
+                    <a class="btn btn-primary" href="https://www.instagram.com/yourweddingpage/" target="_blank"
+                        rel="noopener noreferrer">
+                        Irány az Instagram oldalunk
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="kapcsolat">
+        <div class="container contact-grid">
+            <div class="reveal">
+                <h2 class="section-title">Kapcsolatfelvétel</h2>
+                <p class="section-subtitle">
+                    Írj nekünk, és 48 órán belül válaszolunk. Mesélj az elképzeléseitekről, és küld el nekünk megkeresésed.
+                </p>
+                <div class="card">
+                    <h3>Elérhetőségek</h3>
+                    <p>Email: <a href="mailto:yourweddingpagehu@gmail.com">yourweddingpagehu@gmail.com</a></p>
+                    <p>
+                        <a class="social-link instagram" href="https://www.instagram.com/yourweddingpage/" target="_blank"
+                            rel="noopener noreferrer">
+                            <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <rect x="3" y="3" width="18" height="18" rx="5" ry="5" fill="none"
+                                    stroke="currentColor" stroke-width="1.6" />
+                                <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.6" />
+                                <circle cx="17" cy="7" r="1.2" fill="currentColor" />
+                            </svg>
+                            <span>Your Wedding Page</span>
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <div class="contact-card contact-card-wrap reveal" id="contactCard">
+                <form class="contact-card-face contact-card-form" method="post" action="">
+                    <input type="text" name="name" placeholder="Név" required />
+                    <input type="email" name="email" placeholder="Email" required />
+                    <div class="date-field">
+                        <input type="text" name="wedding_date" id="weddingDate" class="date-input"
+                            placeholder="Esküvő dátuma" autocomplete="off" readonly data-date-input />
+                        <button class="date-toggle" type="button" aria-label="Dátum választó megnyitása"
+                            data-date-toggle>
+                            <svg class="date-toggle-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <rect x="3" y="5" width="18" height="16" rx="2" ry="2" fill="none" stroke="currentColor"
+                                    stroke-width="1.6" />
+                                <path d="M3 9h18" fill="none" stroke="currentColor" stroke-width="1.6" />
+                                <path d="M8 3v4M16 3v4" fill="none" stroke="currentColor" stroke-width="1.6"
+                                    stroke-linecap="round" />
+                            </svg>
+                        </button>
+                        <div class="date-picker" id="datePicker" aria-hidden="true">
+                            <div class="date-picker-header">
+                                <button class="date-nav" type="button" aria-label="Előző hónap" data-date-prev>‹</button>
+                                <div class="date-title" data-date-title></div>
+                                <button class="date-nav" type="button" aria-label="Következő hónap"
+                                    data-date-next>›</button>
+                            </div>
+                            <div class="date-weekdays">
+                                <span>H</span>
+                                <span>K</span>
+                                <span>Sze</span>
+                                <span>Cs</span>
+                                <span>P</span>
+                                <span>Szo</span>
+                                <span>V</span>
+                            </div>
+                            <div class="date-grid" data-date-grid></div>
+                        </div>
+                    </div>
+                    <textarea name="message" placeholder="Üzenet" required></textarea>
+                    <button class="btn btn-primary" type="submit">Megkeresés elküldése</button>
+                </form>
+                <div class="contact-card-face contact-card-success" data-contact-success aria-hidden="true">
+                    <div class="success-check" aria-hidden="true">
+                        <svg viewBox="0 0 72 72">
+                            <defs>
+                                <linearGradient id="successGradient" x1="0" y1="0" x2="1" y2="1">
+                                    <stop offset="0%" stop-color="#c9a227" />
+                                    <stop offset="100%" stop-color="#d98fa2" />
+                                </linearGradient>
+                            </defs>
+                            <circle class="success-circle" cx="36" cy="36" r="30" />
+                            <path class="success-mark" d="M22 38l9 9 19-20" />
+                        </svg>
+                    </div>
+                    <h3>Köszönjük a megkeresést!</h3>
+                    <p>Elküldtük az üzenetet, és hamarosan felvesszük veled a kapcsolatot.</p>
+                    <p>Hálásak vagyunk, hogy írtál nekünk.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">© 2026 your wedding page — Minden jog fenntartva.</div>
+    </footer>
+
+    <div class="modal-overlay" id="serviceModal" aria-hidden="true">
+        <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+            <button class="modal-close" type="button" aria-label="Bezárás">×</button>
+            <h3 id="modalTitle"></h3>
+            <div class="modal-body" id="modalBody"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
